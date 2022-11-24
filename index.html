@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora de Gorgeta</title>
+</head>
+
+<body>
+    <div id="conteiner">
+        <div>
+            <h1 class="title">Calculadora de Gorgeta</h1>
+        </div>
+        <div>
+            <form class="tipsForm" id="tipsForm">
+                <label for="bill">
+                    <p>Quanto ficou a conta ?</p>
+                </label>
+                <p>
+                    R$ <input type="number" placeholder="100" name="bill" id="bill" class="formInput" required>
+                </p>
+                <label for="ServiceQual">
+                    <p>Como foi seu serviço</p>
+                </label>
+                <p>
+                    <select name="ServiceQual" id="ServiceQual" class="formSelect" required>
+                        <option disabled selected value="0">--Escolha uma opção</option>
+                        <option value="0.3">30%-Incrível</option>
+                        <option value="0.2">20%-Bom</option>
+                        <option value="0.15">15%-Aceitável</option>
+                        <option value="0.1">10%-Ruin</option>
+                        <option value="0.05">05%-Péssimo</option>
+                    </select>
+                </p>
+                <label for="people">
+                    <p>Quantas pessoas vão dividir a conta ?</p>
+                </label>
+                <p>
+                    <input type="number" placeholder="1" id="people" class="formInput" required>Pessoa(s)
+                </p>
+                <p>
+                    <button  type="submit" class="formSubmit">Calcular!</button>
+                </p>
+            </form>
+        </div>
+        <div id="TotalTips">
+            Gorgeta Total:
+            R$ <span id="Tip">0,00</span>
+            <p id="each">Cada</p>
+        </div>
+    </div> 
+    <script type="text/javascript" src="script.js"></script>    
+</body>
+</html>
